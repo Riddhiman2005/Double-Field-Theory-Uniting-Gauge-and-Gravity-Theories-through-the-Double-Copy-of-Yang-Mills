@@ -1,0 +1,268 @@
+\documentclass[13pt]{article}
+\usepackage{graphicx} 
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{bm}      
+\usepackage{tensor}  
+\usepackage{braket}  
+\usepackage{physics} 
+\usepackage{hyperref} 
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\title{\Huge \textbf{Double Field Theory:Uniting Gauge and Gravity Theories through the Double Copy of Yang-Mills
+}}
+\author{Riddhiman Bhattacharya FRSA \thanks{Email: riddhiman.butai2005@gmail.com\\
+FRSA: Fellow of Royal Society of Arts, London, UK}}
+\date{10 August 2023}
+
+\begin{document}
+
+\maketitle
+\large
+\begin{abstract}
+In the realm of theoretical physics, scientists have long been intrigued by the link between gauge theories and gravity. This study explores a fascinating idea called the "double copy technique," which reveals a deep connection between these two seemingly different theories. While gauge theories, like Yang-Mills, describe basic interactions in a simple and elegant way, gravity, despite its symmetry, is a complex and challenging theory in the quantum world. This paper investigates the "double field theory" (DFT) and its connection to the double copy method. This connection shows that gauge and gravity theories are remarkably similar at the quantum level. The double copy technique essentially transforms gravity into a sort of "squared" gauge theory \cite{Wood2021}, offering insights into how color and movement are related in gauge theories. By carefully studying the math and important equations, this paper explains how this connection is tied to the idea of color and movement duality. The study concludes by introducing the DFT action, which is derived through the double copy method and doesn't rely on a specific background. This surprising result highlights how the complexity of gravity can be beautifully linked to the simplicity of Yang-Mills theory.
+\end{abstract}
+
+\section{Introduction}
+
+This paper is based on a paper \cite{D_az_Jaramillo_2022} which I read recently on DFT \cite{hull2009double} and double copy of Yang-Mills.The results that the paper discussed are very interesting and thought-provoking.
+
+To provide some background context, the framework of fundamental interactions in nature encompasses two categories of theories: firstly, Einstein's theory of relativity, and secondly, Yang-Mills' theory \cite{RevModPhys.52.661, WITTEN1978394} which characterizes the gauge bosons within the standard model of particle physics. Although Yang-Mills represents a class of gauge theories, not all gauge theories need conform to the Yang-Mills form. In a broader perspective, even gravity itself can be viewed as a gauge theory, evident through its association with the diffeomorphism group symmetry \cite{Bonezzi2022}.
+
+While Yang-Mills theory stands as a remarkable quantum field theory (QFT) with a unified account of electromagnetic, weak, and strong forces, gravity, in contrast, poses significant challenges. Perturbation theory in gravity becomes increasingly complex, especially beyond quadratic order, rendering interaction vertex calculations nightmarish. Thus, the juxtaposition of simple-elegant Yang-Mills and complicated gravity at a quantum level underscores an age-old duality.
+
+Notably, despite their differences, gravity and gauge theory share certain resemblances \cite{Bern2010b,borsten2020gravity}, particularly when considering aspects like Lorentz symmetries and super Poincaré symmetries. An example of their intriguing connection is the holographic principle and the AdS/CFT correspondence.
+
+A productive avenue for exploring gauge-gravity duality, particularly in the past decade, has stemmed from the works of \textbf{Bern-Carrasco-Johansson} \cite{Bern2008,Bern2010b} and \cite{Bern2010}. A striking observation emerges: gravity scattering amplitudes can be regarded as an exact double copy of Yang-Mills amplitudes \cite{Oxburgh_2013,Bern2010b},implying a profound interrelation between these two fundamental theories.
+
+This perspective schematically posits that gravity can be understood as the double product of two gauge theories, leading to the somewhat intriguing assertion that gravity can be seen as gauge theory squared \cite{Bern2010b,wood2021gravity}. Central to this idea is the KLT relations in string theory \cite{Bjerrum_Bohr_2004,ANANTH2007128}. The double copy technique leverages a property known as color-kinematics duality within the building blocks of gauge theories, establishing a deep connection between color and kinematics while preserving amplitudes.
+
+For example, examining the relation between gravity and gauge theory amplitudes at tree level involves considering a gauge theory amplitude where all particles exist in the adjoint color representation. For pure Yang-Mills, represented by
+\begin{equation}
+S_{YM} = \frac{1}{g^2} \int \text{Tr} F \wedge \star F \tag{1}
+\end{equation}
+the n-point L-loop gluon amplitude can be organized in terms of cubic diagrams as
+\begin{equation}
+\mathcal{A}_{YM}^{n,L} = \sum_i \frac{c_i n_i}{S_i d_i} \tag{2}
+\end{equation}
+where $c_i$ are the color factors, $n_i$ are kinetic numerical factors, and $d_i$ represents the propagator.
+
+The color-kinematic duality relates these factors through transformations that mirror the Jacobi identity of the color factors:
+\begin{equation}
+c_i + c_j + c_k = 0 \Rightarrow n_i + n_j + n_k = 0 \quad \text{and} \quad c_i \rightarrow -c_i \Rightarrow n_i \rightarrow -n_i. \tag{3}
+\end{equation}
+
+This duality enables the derivation of gravity amplitudes from gauge theory ones, for instance, leading to an $\mathcal{N} = 0$ supergravity amplitude:
+\begin{equation}
+\mathcal{A}_{\mathcal{N}=0}^{n,L} = \sum_i \frac{n_1 n_i}{S_i d_i} \tag{4}
+\end{equation}
+where the numerator factors are transformed from color to kinematic factors.
+
+Despite the richness of these relationships, it's important to note that this discussion doesn't directly concern the Lagrangian-level description of physics. Previously, attempts to extend the double copy method to the level of action seemed uncertain. A statement in \cite{Grassmann} captures the challenge: 'no amount of fiddling with the Einstein-Hilbert action will reduce it to a square of a Yang-Mills action.' Nevertheless, the paper \cite{D_az_Jaramillo_2022} delves into this aspect.
+
+In \cite{D_az_Jaramillo_2022}, the authors employ the double copy techniques to replace color factors with a second set of kinematic factors, introducing their momenta. This leads to a double field theory (DFT) at quadratic and cubic order, presenting doubled momenta or, in position space, an augmented set of coordinates. Intriguingly, the double copy of Yang-Mills theory at the action level yields double field theory through the integration of the duality-invariant dilaton ($\phi$) which is defined in terms of scalar dilation $\Phi$ \cite{D_az_Jaramillo_2022}
+
+$$e^{2\phi}=\sqrt{-g}e^{2\Phi}$$
+
+This insightful exploration underscores the intricate connections and potential unification between gauge theory and gravity.
+
+\section{ Yang-Mills/DFT–Quadratic theory}
+
+Let's begin with a non-abelian gauge theory in \(D\)-dimensions represented by the action:
+
+\begin{equation}
+S_\text{YM} = -\frac{1}{4} \int d^Dx \, \kappa_{ab} F^{\mu \nu a} F_{\mu \nu}^{b} \tag{6}
+\label{Action}
+\end{equation}
+
+
+where \(A_{\mu}^{a}\) are the gauge bosons' fields and \(F_{\mu \nu}^{a}\) represents their field strength:
+
+\begin{equation}
+F_{\mu \nu}^{a} = \partial_{\mu} A^{a}_{\nu} - \partial_{\nu}A^{a}_{\mu} + g_{YM} f^{a}_{bc}A_{\mu}^{b} A_{\nu}^{c} \tag{7}
+\end{equation}
+
+
+where \(g_{YM}\) is the gauge coupling constant, \(f^{a}_{bc}\) are the structure constants of the non-Abelian gauge group, and \(a, b, \ldots\) are adjoint indices. The Cartan-Killing form \(\kappa_{ab}\) is used to lower the adjoint indices, defining \(f_{abc} \equiv \kappa_{ad}f^d_{bc}\) in an anti-symmetric manner.
+
+Expanding the action \eqref{Action} up to quadratic order in \(A^{\mu}\) and then performing integration by parts leads to:
+\begin{align}
+S_\text{YM}^{(2)} &=-\frac{1}{4} \int d^{D}x \, \kappa_{ab} \left(-2 \Box A^{\mu a} A_{\mu}^{b} + \partial_{\mu}\partial^{\nu} A^{\mu a}A_{\nu}^b\right) \nonumber \\
+&=\frac{1}{2} \int d^{D}x \, \kappa_{ab}A^{\mu a} \left(\Box A_{\mu}^{b} + \partial_{\mu}\partial^{\nu} A_{\nu}^b\right)
+\tag{8}
+\end{align}
+
+Extracting \(A^{\mu a}\) and the factor of 2, the second-order action takes the form as presented in \cite{D_az_Jaramillo_2022}:
+
+\[S_{YM}^{(2)} = \frac{1}{2} \int d^{D}x \, \kappa_{ab} \, A^{\mu a}(\Box A^{b}_{\mu} - \partial_{\mu} \partial^{\nu} A^b_{\nu}) \tag{9}\]
+
+To align with the double copy formalism, we move into momentum space with momenta \(k\). Define $$A^{a}_{\mu}(k) = \frac{1}{(2\pi)^{D/2}} \int d^D x \, A_{\mu}^{a}(x) \exp(ikx)$$. \\
+In these notes, we adopt the notation \(\int_k := \int d^{D} k\). Following the convention in \cite{D_az_Jaramillo_2022}, where \(k^2\) is scaled out, we introduce the projector:
+\begin{equation}
+    \Pi^{\mu \nu}(k) \equiv \eta^{\mu \nu} - \frac{k^{\mu} k^{\nu}}{k^2} \tag{10}
+    \label{prop1}
+\end{equation}
+
+
+with \(\eta_{\mu \nu} = (-,+,+,+)\) denoting the Minkowski metric.
+
+\vspace{1cm}
+\section*{\textbf{Proposition 1:}} \textit{The projector defined in \eqref{prop1} satisfies the following identities:}
+
+\begin{equation}
+\Pi^{\mu \nu}(k)k_{\nu} \equiv 0, \quad \text{and} \quad \Pi^{\mu \nu}\Pi_{\nu \rho} = \Pi^{\mu}_{\rho}
+\tag{11}
+\label{identity prop 1}
+\end{equation}
+
+\subsection*{Proof} The second identity is trivial. To address the first identity, we'll substitute \eqref{prop1} into \eqref{identity prop 1}, with the consideration that \(k^2\) has been factored out.\\
+The first identity in \eqref{identity prop 1} implies gauge invariance under the transformation:
+
+\begin{equation}
+\delta A^{a}_{\mu}(k) = k_{\mu}\lambda^a(k)
+\tag{12}
+\end{equation}
+
+Here, the gauge parameter \(\lambda^a(k)\) is defined as an arbitrary function.
+
+
+\section{Double copy of gravity theory}
+\section*{\textbf{Proposition 2}}
+\textit{The double copy prescription in gravity theory leads to double field theory.} \cite{Bonezzi2022}
+
+\subsection*{Proof}
+Let's commence by exchanging the color indices $a$ with a new set of space-time indices $a \rightarrow \bar{\mu}$. This introduces a second set of space-time momenta $\bar{k}^{\bar{\mu}}$ corresponding to the new indices.\cite{Bern2019} In the context of momentum space, we redefine the fields $A^a_{\mu}(k)$ as a novel doubled field:
+\begin{equation}
+A^a_{\mu}(k) \rightarrow e_{\mu \bar{\mu}}(k, \bar{k}). \tag{13}
+\end{equation}
+
+Continuing along the lines of the double copy framework, we need to establish a substitution rule for the Cartan-Killing metric $\kappa_{ab}$. The authors of \cite{D_az_Jaramillo_2022} propose that we replace this metric with a projector characterized by barred indices, leading to:
+\begin{equation}
+\kappa_{ab} \rightarrow \frac{1}{2} \bar{\Pi}^{\bar{\mu} \bar{\nu}}(\bar{k}). \tag{14}
+\label{14}
+\end{equation}
+
+Notably, this expression entirely resides within the domain of barred space.
+
+\subsubsection*{Remark 1 (Justification for Equation \eqref{14})}
+The motivation for the substitution \eqref{14} arises from the double copy principle applied at the level of amplitudes. By adopting a gauge theory amplitude form $\mathcal{A} = \sum_i \frac{n_i c_i}{D_i}$, where $n_i$ signifies kinematic factors, $c_i$ represents color factors, and $D_i$ denotes inverse propagators, we observe that in the double copy process, the color factors can be replaced by kinematic factors. Notably, $D_i$ scales with $k^2$, effectively leaving the propagator doubled while eliminating the color factor.
+
+With these transformations in place, we derive a double copy action for gravity with the following structure:
+\begin{equation}
+S_{\text{grav}}^{(2)} = - \frac{1}{4} \int_{k, \bar{k}} k^2 \Pi^{\mu \nu}(k) \bar{\Pi}^{\bar{\mu}\bar{\nu}}(\bar{k}) e_{\mu \bar{\mu}}(-k, -\bar{k})e_{\nu \bar{\nu}}(k, \bar{k}). \tag{15}
+\label{action15}
+\end{equation}
+
+This action exhibits an elegant structure, reminiscent of the duality symmetric string's form.
+
+To provide a more explicit characterization of the action \eqref{action15}'s doubled nature, let's introduce doubled momenta denoted as $K = (k, \bar{k})$. Analogous to the duality symmetric string approach, we treat $k$ and $\bar{k}$ equivalently. This symmetrical treatment brings into focus the arbitrariness between $k^2$ and $\bar{k}^2$ at the front of the integrand. To address this, we impose the level-matching condition \cite{hull2009double,hull2009gauge,hohm2010background,hohm2010generalized}:
+\begin{equation}
+k^2 = \bar{k}^2 \tag{16}
+\label{level matching}
+\end{equation}
+which, intriguingly, mirrors the level-matching requirement. Notably, the imposition of this constraint is crucial for obtaining double field theory (DFT), akin to its necessity in pure DFT.
+
+\section*{Proposition 2}
+\textit{The double copy prescription in gravity theory leads to double field theory.}
+
+\subsection*{Proof}
+We initiate the proof by substituting the color indices $a$ with a secondary set of space-time indices $a \rightarrow \bar{\mu}$. Consequently, this introduces an alternate set of space-time momenta $\bar{k}^{\bar{\mu}}$ that corresponds to the new indices. In the realm of momentum space, we redefine the fields $A^a_{\mu}(k)$ as a novel doubled field:
+\begin{equation}
+A^a_{\mu}(k) \rightarrow e_{\mu \bar{\mu}}(k, \bar{k}). 
+\tag{17}
+\end{equation}
+
+Proceeding with the double copy methodology, we must establish a replacement rule for the Cartan-Killing metric $\kappa_{ab}$. The authors of \cite{D_az_Jaramillo_2022} advocate that we substitute this metric with a projector that bears barred indices, yielding:
+\begin{equation}
+\kappa_{ab} \rightarrow \frac{1}{2} \bar{\Pi}^{\bar{\mu} \bar{\nu}}(\bar{k}). \tag{18}
+\end{equation}
+
+It is worth highlighting that this expression operates entirely within the framework of barred space.
+
+\subsubsection*{Remark 1:Reason behind the Correctness of Equation \eqref{14}}
+The justification for the substitution \eqref{14} stems from the double copy principle as it operates at the amplitude level. Schematically, one can consider a gauge theory amplitude in the form $\mathcal{A} = \sum_i \frac{n_i c_i}{D_i}$, where $n_i$ represent kinematic factors, $c_i$ denote color factors, and $D_i$ stand for inverse propagators. Within the double copy process, the color factors are replaced by kinematic factors. Remarkably, $D_i$ scales with $k^2$, effectively leading to the doubling of the propagator while eliminating the color factor.
+
+Implementing these substitutions, we derive a double copy action for gravity characterized by the following structure:
+\begin{equation}
+S_{\text{grav}}^{(2)} = - \frac{1}{4} \int_{k, \bar{k}} k^2 \Pi^{\mu \nu}(k) \bar{\Pi}^{\bar{\mu}\bar{\nu}}(\bar{k}) e_{\mu \bar{\mu}}(-k, -\bar{k})e_{\nu \bar{\nu}}(k, \bar{k}). \tag{19}
+\end{equation}
+
+This action exhibits an elegant structure that bears a resemblance to the configuration of the duality symmetric string.
+
+\subsubsection*{Remark 2:More General Solutions}
+While the solution $k = \bar{k}$ may resonate from the analysis of the linearized theory, there exist broader solutions that warrant deeper investigation. It becomes apparent that under the transformation
+\begin{equation}
+\delta e_{\mu \bar{\nu}} = k_{\mu}\bar{\lambda}_{\bar{\nu}} + \bar{k}_{\bar{\nu}}\lambda_{\mu} \tag{20}
+\label{transformation}
+\end{equation}
+the action \eqref{action15} remains invariant. Consequently, we introduce two gauge parameters that are reliant on doubled momenta.
+
+After detailing the projectors \eqref{identity prop 1} and imposing the level-matching condition \eqref{level matching}, we harness the metric to lower indices. This leads us to deduce that, upon multiplying with the $e$ fields, the action \eqref{action15} assumes the following form:
+\begin{align}
+S_{\text{grav}}^{(2)} &= -\frac{1}{4} \int \int_{k, \bar{k}} (k^{2}e^{\mu \bar{\nu}}e_{\mu \bar{\nu}} - k^{\mu}k^{\rho}e_{\mu \bar{\nu}}e^{\bar{\nu}}_{\rho} \nonumber \\
+&\quad - \bar{k}^{\bar{\nu}}\bar{k}^{\bar{\sigma}}e_{\mu \bar{\nu}}e^{\mu}_{\bar{\sigma}} + \frac{1}{k^2}k^{\mu}k^{\rho}\bar{k}^{\bar{\nu}}\bar{k}^{\bar{\sigma}}e_{\mu \bar{\nu}}e_{\rho \bar{\sigma}}). \tag{18}
+\label{18}
+\end{align}
+
+The resemblance to the background-independent quadratic action of DFT is already apparent. To enhance the comparison, we Fourier transform to doubled position space.
+
+ This transformation reveals that every term transitions smoothly except the final term, which introduces a non-local segment. The solution, as indicated in \cite{D_az_Jaramillo_2022}, involves introducing an auxiliary scalar field $\phi(k, \bar{k})$, akin to the dilaton.
+
+Applying these steps enables us to rewrite \eqref{18} in the following manner:
+\begin{equation}
+S_{\text{grav}}^{(2)} = -\frac{1}{4} \int \int_{k, \bar{k}} (k^{2}e^{\mu \bar{\nu}}e_{\mu \bar{\nu}} - k^{\mu}k^{\rho}e_{\mu \bar{\nu}}e^{\bar{\nu}}_{\rho} - \bar{k}^{\bar{\nu}}\bar{k}^{\bar{\sigma}}e_{\mu \bar{\nu}}e^{\mu}_{\bar{\sigma}} - k^2 \phi^2 + 2\phi k^{\mu}\bar{k}^{\bar{\nu}}e_{\mu \bar{\nu}}). \tag{19}
+\label{19}
+\end{equation}
+
+By using the field equations for $\phi$:
+\begin{equation}
+\phi = \frac{1}{k^2} k^{\mu}\bar{k}^{\bar{\nu}}e_{\mu \bar{\nu}} \tag{20}
+\end{equation}
+or alternatively using the redefinition:
+\begin{equation}
+\phi \rightarrow \phi^{\prime} = \phi - \frac{1}{k^2} k^{\mu}\bar{k}^{\bar{\nu}}e_{\mu \bar{\nu}} \tag{21}
+\end{equation}
+we can regain the non-local action \eqref{18}.
+
+\subsubsection*{Remark 3 (Sustaining Gauge Invariance)}
+A notable aspect is that \eqref{19} maintains its gauge invariance, as confirmed by examining the gauge transformation for the dilaton \begin{equation}
+    \delta \phi = k_{\mu}\lambda^{\mu} + \bar{k}_{\bar{\mu}}\bar{\lambda}^{\bar{\mu}} = \partial / \partial \bar{x}^{\bar{\mu}}
+\tag{22}
+\label{22}
+\end{equation}
+\\
+Additionally, the standard duality invariant measure is obtained. Consequently, the resulting action takes on the following configuration:
+\begin{align}
+S_{\text{grav}}^{(2)} &= \frac{1}{4} \int d^D x \ d^D \bar{x} \ (e^{\mu \bar{\nu}}\Box e_{\mu \bar{\nu}} + \partial^{\mu}e_{\mu \bar{\nu}}\partial^{\rho}e_{\rho}^{\bar{\nu}} \nonumber \\
+&\quad + \bar{\partial}^{\bar{\nu}}e_{\mu \bar{\nu}}\bar{\partial}^{\bar{\sigma}}e^{\mu}_{\bar{\sigma}} - \phi \Box \phi + 2\phi \partial^{\mu}\bar{\partial}^{\bar{\nu}}e_{\mu \bar{\nu}}). \tag{23}
+\label{23}
+\end{align}
+
+
+In the given context, the partial derivatives are represented as $\partial_\mu = \frac{\partial}{\partial x^\mu}$ and $\bar\partial_{\bar{\mu}} = \frac{\partial}{\partial \bar{x}^{\bar{\mu}}}$, which correspond to coordinates that are dual to $k^\mu$ and $\bar k^{\bar \mu}$, as indicated by \eqref{level matching}. This correspondence leads to the imposition of a constraint expressed by
+
+\begin{equation}
+\Box \equiv \partial^\mu\partial_\mu = \bar\partial^{\bar{\mu}}\bar\partial_{\bar{\mu}},
+\tag{24}
+\label{constraint}
+\end{equation}
+
+The gauge transformations \eqref{transformation} and \eqref{22}, when translated to doubled position space, take the form
+
+\begin{equation}
+\begin{aligned}
+\delta e_{\mu \bar{\nu}} &= \partial_{\mu} \bar{\lambda}{\bar{\nu}} + \bar{\partial}{\bar{\nu}} \lambda_{\mu}; \
+\delta \phi &= \partial_{\mu} \lambda^{\mu} + \bar{\partial}_{\bar{\mu}} \bar{\lambda}^{\bar{\mu}}.
+\end{aligned}
+\tag{25}
+\end{equation}
+
+These transformations leave \eqref{23} invariant, subject to the constraint \eqref{constraint}. The action \eqref{23} precisely defines the standard quadratic double field theory action. When the identification $x\equiv\bar x$ is made, it becomes equivalent, with appropriate field redefinitions, to the well-known free action describing gravity, an antisymmetric tensor, and a dilaton, as discussed in \cite{hull2009double}.
+
+\section{Conclusion}
+In summary, the double copy technique presents a remarkable avenue for unraveling the deep connections between gauge and gravity theories. By leveraging color-kinematics duality and a meticulous analysis of mathematical relationships, this paper has illuminated the intriguing equivalence between the two seemingly distinct realms of physics. The transformation of gravity into a "squared" gauge theory through the double copy method offers a tantalizing glimpse into the unification of fundamental forces. The derived background-independent double field theory action, born from the double copy approach, underscores the elegance of this symmetry and its potential implications for understanding the fundamental nature of the universe. As researchers continue to delve into this fascinating interplay between gauge and gravity, the double copy technique promises to unlock new insights and pave the way for a more comprehensive understanding of the fabric of reality.
+
+\newpage
+\bibliography{references}
+\bibliographystyle{unsrt}
+
+\end{document}
